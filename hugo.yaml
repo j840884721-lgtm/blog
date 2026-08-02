@@ -1,0 +1,86 @@
+baseURL: "https://j840884721-lgtm.github.io/blog/"
+languageCode: zh-CN
+hasCJKLanguage: true
+title: AI 学习日志
+theme: PaperMod
+
+paginate: 10
+enableEmoji: true
+
+taxonomies:
+  tag: tags
+  category: categories
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 20
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 40
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 50
+
+params:
+  env: production
+  description: 记录每日学习与研究 AI 的过程
+  author: 我
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowToc: true
+  TocOpen: false
+  UseHugoToc: true
+  comments: false
+
+  homeInfoParams:
+    Title: 你好，欢迎来到我的 AI 学习日志
+    Content: 这里记录我每天学习和研究 AI 的过程：论文、工具、项目实践与踩坑笔记。
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/j840884721-lgtm"
+    - name: rss
+      url: "index.xml"
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
