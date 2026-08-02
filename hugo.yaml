@@ -42,6 +42,7 @@ menu:
 
 params:
   env: production
+  DateFormat: "2006年1月2日"
   description: 记录每日学习与研究 AI 的过程
   author: 我
   defaultTheme: auto
